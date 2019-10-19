@@ -97,6 +97,9 @@ header {
 	padding-top: 30px;
 	float: left;
 }
+.intro a:link, .intro a:visited{
+	color: #FFFFFF;
+	}
 .intro .column h3 {
 	color: #FFFFFF;
 	text-align: center;
