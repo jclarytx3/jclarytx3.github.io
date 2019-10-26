@@ -3,10 +3,4 @@
 .main-container{
     display: grid;
     grid-template-areas:
-    'article1'
-    'article2'
-    'article3';
-}
-.header-container h2 {
-    display: none;
-}
+    'article1   article2   article3';
