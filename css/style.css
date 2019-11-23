@@ -27,7 +27,7 @@
     font-size: 100%;
   }
 body{
-  min-width: 33rem;
+  /* min-width: 33rem; */
   max-width: 80rem;
     color: #fff;
     background-color: rgb(160, 156, 156);
