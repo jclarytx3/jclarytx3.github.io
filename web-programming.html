@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="author" content="Jim Clary">
+<meta name="description" content="ITSE-1311.P01: Beginning Web Programming">
+<title>Web Programming</title>
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<style>
+</style>
+
+<body>
+    <div class="grid-container">
+        <nav class="nav">
+            <!-- Navbar on tablet & desktop (Hidden on mobile) -->
+            <div class="hide-mobile">
+                <img src="./img/Jim.jpg" style="width:100%;" alt="Jim Clary in Alaska">
+                <a href="./index.html" class="nav-button">
+                    <i class="fas fa-home"></i>
+                    <p>Home Page</p>
+                </a>
+                <a href="#lab3" class="nav-button">Lab 3</a>
+                <a href="#lab4" class="nav-button">Lab 4</a>
+                <a href="#lab5" class="nav-button">Lab 5</a>
+
+            </div>
+            <!-- Navbar on mobile (Hidden on tablet & desktop modes) -->
+            <div class="hide-desktop hide-tablet">
+                <a href="./index.html" class="nav-button">Home</a>
+                <a href="#lab3" class="nav-button">Lab 3</a>
+                <a href="#lab4" class="nav-button">Lab 4</a>
+                <a href="#lab5" class="nav-button">Lab 5</a>
+            </div>
+        </nav>
+        <main>
+            <div class="header-main">
+                <h1> Jim Clary</h1>
+                <h2>Semester Project</h2>
+                <h3>ITSE 1311</h3>
+                <h4>Beginning Web Programming</h4>
+
+            </div>
+            <div class="page-main">
+                <article id="introduction">
+                    <h2>Introduction</h2>
+                    <p>
+                        I have programming experience and developed software for computer models using FORTRAN and
+                        assembler. But I had almost no knowledge of the “language of the web”. Oh – I could read html &
+                        css, but that was about all I could do.<br><br>
+                        I enjoyed taking this class and feel I have a good grasp of hand coding HTML and CSS. I really
+                        enjoy the design flexibility of hand coding. This is especially true for responsive websites. I
+                        don’t have to use the ‘default’ of a mobile site and a desktop site. I can set transitions and
+                        breakpoints as needed. This makes the sites much more responsive.<br><br>
+                        In this webpage, I’m presenting the last three labs of the course. As you will see, there is a
+                        transition of the basic websites using CSS float layouts to the more refined Flexbox and CSS
+                        Grid.
+
+                    </p><br><br>
+                    <hr><br><br>
+                </article>
+                <article id="lab3">
+                    <h2>Lab 3 - Float Layout</h2>
+                    <p><a href=.\Lab3\index.html>Lab 3</a> was our first “complete” webpage. The title was most
+                        interesting – “Zombie Invasion!”. This lab was challenging as described in the
+                        instructions:<br><br><i>You are going to either add div tags or use existing structure to make
+                        boxes
+                        and the use floats and clears to manipulate the boxes. You should create a fluid float layout
+                        (by % or ems). Do NOT use display: table, display: inline-block, or positioning for creating the
+                        three columns.</i><br><br>
+                        I worked on this project for hours to get things working. I learned that using Float Layout is
+                        NOT the way to create a web page. But it is good to understand float layout if I encounter a
+                        legacy website created with this technique.
+
+                    </p><br><br>
+                    <hr><br><br>
+                </article>
+                <article id="lab4">
+                    <h2>Lab 4 - Media Queries and Multimedia</h2>
+                    <p>The instructions for <a href=.\Lab4\index.html>Lab 4</a> were:<br><br>
+                        <i>Create a sample web page for a Collin student group either real or imaginary to use in this lab. You may use filler text for the paragraph level content. Use the principles of responsive design--solid HTML 5 structure, mobile-first and external style sheets to create a responsive site. In this lab, you will need to demonstrate the use of legacy CSS floats and media queries to change the appearance of the site based on devices screen size. </i><br><br>
+                        So, I had to create another website using floats. At least I could use the experience I gained in Lab 3. I had fun with this lab. My website was for a hypothetical “Collin 65+ Student Group”. The most challenging part of this lab was creating a responsive webpage. I found it satisfying after ‘mastering’ the technique and watching the website respond to changes in the viewport size.
+                </p><br><br>
+                                         <hr><br><br>
+                </article>
+                <article id="lab5">
+                    <h2>Lab 5 - Flexbox and CSS Grid</h2>
+                      <p>
+                        The instructions for <a href=.\Lab5\index.html>Lab 5</a> were:<br><br>
+<i> We are creating a site about favorite places to eat.</i><br><br>
+Finally, in this lab we were able to use the more powerful CSS grid and flexbox. We also gained experience in using multiple webpages. <br><br>
+I found this to be the easiest lab. Writing HTML & CSS was becoming much easier. Also, I identified a better way to build <a href=https://evanminto.com/blog/intrinsically-responsive-css-grid-minmax-min/>responsive grids</a>.
+
+                      </p><br><br>
+                    </article>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Proudly Handcrafted using Responsive Web Design & CSS Grid</p>
+            <p>Code Editor: <a href=https://code.visualstudio.com> Visual Studio Code</a></p>
+            <p><a href="http://jimclary.com">Jim Clary</a> &copy; 2019</p>
+            <p>jclary1@cougarmail.collin.edu</p>
+            <p>Updated 12/01/2019</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

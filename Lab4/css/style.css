@@ -1,0 +1,221 @@
+/* Reset */
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Main Styling */
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /*	doing this to fill the white space in multi column layouts */
+  background: navy;
+}
+/*---MAIN-TITLE---*/
+.title-center {}
+.title-go {
+  animation-name: go-cougars;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes go-cougars {
+  from {
+    color: #2C24E4;
+  }
+  to {
+    color: orangered
+  }
+}
+header h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  padding: 20px 0;
+  font-weight: bolder;
+  text-align: center;
+  background: navy;
+  color: white;
+  overflow: auto;
+  background-image: linear-gradient(red, yellow);
+}
+header h1 a {
+  text-decoration: none;
+}
+main {
+  border-bottom: rgba(135, 207, 235, .529) solid thick;
+}
+/*---NAVBAR---*/
+#navbar {
+  background: navy;
+  color: white;
+  overflow: auto;
+  border-bottom: rgba(135, 207, 235, .529) solid thick;
+}
+#navbar a {
+  color: white;
+  text-decoration: none;
+}
+/*---DOWN THE PAGE MENU---*/
+@media screen and (max-width: 540px) {
+  #navbar ul {
+    float: none;
+  }
+  #navbar li {
+    float: none;
+  }
+  #navbar ul li a {
+    display: block;
+    padding: 10px 0 0 0;
+    text-align: center;
+    background: navy;
+    color: white;
+    border-bottom: rgba(135, 207, 235, .529) dotted 1px;
+  }
+}
+/*---ACROSS THE PAGE MENU---*/
+@media screen and (min-width: 541px) {
+  #navbar ul {
+    list-style: none;
+    float: right;
+  }
+  #navbar li {
+    float: left;
+  }
+  #navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+}
+#navbar ul li a:active {
+  background: rgb(0, 0, 70);
+  color: blueviolet;
+}
+#navbar ul li a:visited {
+  color: white;
+}
+#navbar ul li a:hover {
+  background: rgb(0, 0, 70);
+  color: skyblue;
+}
+/*----ARTICLES---*/
+.info-content {}
+article {
+  background: navy;
+  color: white;
+  padding: 0 20px 1rem;
+  border-bottom: rgba(135, 207, 235, .529) solid thick;
+}
+article h2 {
+  text-align: center;
+}
+.article-links-container {
+  text-align: center;
+}
+article a:link {
+  color: skyblue;
+  text-decoration: underline;
+}
+article a:visited {
+  color: skyblue;
+}
+article a:hover, a:active {
+  color: greenyellow;
+}
+article p.youtube {
+  position: relative;
+  padding: 30px 0px 57% 0px;
+  height: 0;
+  overflow: hidden;
+}
+article .figure1-lan-box, article .figure1-port-box {
+  float: left;
+  height: auto;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  border-radius: 25px;
+}
+article .exercise-info {
+  padding-top: 1rem;
+  width: 90%;
+}
+article h2, article h3 {
+  padding: 1em 0;
+}
+@media screen and (max-width: 500px) {
+  article figure {
+    display: none;
+  }
+}
+/*---FOOTER---*/
+footer a:link {
+  color: skyblue;
+}
+footer a:hover, footer a.current {
+  color: blue;
+}
+footer {
+  background: darkgray;
+  color: black;
+  text-align: center;
+  padding-bottom: 20px;
+  overflow: auto;
+}
+.webmaster-box1 {
+  float: left;
+  width: 25%;
+  height: auto;
+  text-align: center;
+  line-height: 90%;
+}
+.webmaster-box2 {
+  float: left;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  line-height: 90%;
+}
+footer a:link, footer a:visited {
+  color: darkblue;
+  text-decoration: underline;
+}
+footer a:hover, a:active {
+  color: greenyellow;
+}
+/*Show css verify logo when display wide enough*/
+.webmaster-box1 {
+  border: 0;
+  padding: 0 0 0 1rem;
+  width: 33%;
+}
+.webmaster-box2 {
+  width: 33%;
+  text-align: center;
+}
+.webmaster-box3 {
+  border: 0;
+  padding: 0 1rem 0 0;
+  width: 34%;
+}
+/*Don't show css logo when too narrow (note - learned have to have the display on as default*/
+@media screen and (max-width: 399px) {
+  .webmaster-box1 {
+    display: none;
+  }
+  .webmaster-box2 {
+    text-align: center;
+    width: 100%;
+  }
+  .webmaster-box3 {
+    display: none;
+  }
+}
+/*Miscalenous Stuff*/
+/* Clearfix (clear floats) */
+.clear-floats::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*classes to be used in tablet & desktop. They will be defined in tablet.css & desktop.css*/
+.tablet-container {}
+.desktop-container {}

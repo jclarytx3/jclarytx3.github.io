@@ -1,0 +1,18 @@
+.desktop-container {
+  float: left;
+  width: 33.33%;
+  border-left: rgba(135, 207, 235, .529) dotted 1px;
+  border-right: rgba(135, 207, 235, .529) dotted 1px;
+}
+article .figure1-lan-box {
+  width: 60%;
+  max-width: 25rem;
+}
+article .figure1-port-box {
+  width: 50%;
+  max-width: 20rem;
+}
+.collin-footer1 {
+  display: none;
+}
+.collin-footer2 {}

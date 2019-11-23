@@ -1,125 +1,119 @@
-<!doctype html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="author" content="Jim Clary">
-  <meta name="description" content="Jim Clary">
-  <title>Jim Clary</title>
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/mobile.css" rel="stylesheet" type="text/css" media="(max-width: 320px">
-  <link href="css/tablet.css" rel="stylesheet" type="text/css" media="(min-width: 321px)and (max-width: 767px)">
-  <link href="css/small-desktop.css" rel="stylesheet" type="text/css" media="(min-width: 768px) and (max-width: 1096px)">
-  <style>
-    .gallery {
-      display: none;
-    }
-
-    footer {
-      display: none;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Main Container -->
-  <div class="container">
-    <!-- Header -->
-    <header class="header">
-      <h4 class="logo">JIM CLARY - SITE UNDER CONSTRUCTON</h4>
-    </header>
-    <!-- Hero Section -->
-    <section class="intro">
-      <div class="clearfix">
-        <!-- <h3>JIM CLARY</h3> -->
-        <img src="images/Jim.png" alt="Jim Clary" class="profile">
-      <!-- </div> -->
-      <div class="column">
-        <p>Hello & Welcome to my site. My name is Jim Clary and I’m a retired environmental & computer consultant. I
-          owned a small consulting firm for over 30 years. In 2016 I sold that firm and retired from consulting in 2018.
-        </p>
-        <p>
-          Retirement allows me the freedom to pursue things that are of interest to me. Currently those ‘things’ are:
-        </p>
-        <!-- note - have to use http, not https to get the link to work w/o a security warning -->
-        <p>• <em>Training my fellow seniors about technology</em> - I have a website <a
-            href="http://www.theseniorgeek.com"><em>TheSeniorGeek.com</em></a> and a <a
-            href="https://www.youtube.com/channel/UCxzzIMirTSGmIMIhoJmz8dQ"><em>YouTube channel</em></a>. </a></p>
-        <p>• <em>Web development</em> – I’m attending Collin College pursuing a certification as a Front-end Web
-          Developer.</p>
-        <p>• <em>Physics</em> – I have a keen interest in Quantum Physics, Special and General Rlativity.
-        </p>
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="author" content="Jim Clary">
+<meta name="description" content="ITSE-1311.P01: Beginning Web Programming">
+<title>Semester Project</title>
+<link href="./css/style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<script src=./js/welcome.js type="text/javascript"></script>
+<style>
+</style>
+<body onload="trigger();">
+  <div class="grid-container">
+    <nav class="nav">
+      <!-- Navbar on tablet & desktop (Hidden on mobile) -->
+      <div class="hide-mobile">
+        <img src="./img/jim.jpg" style="width:100%;" alt="photo of Jim Clary">
+        <a href="#" class="nav-button">
+          <i class="fas fa-home"></i>
+          <p>Home</p>
+        </a>
+        <a href="./web-tools.html" class="nav-button">
+          <i class="far fa-images"></i>
+          <p>Web Design Tools - Graphics</p>
+        </a>
+        <a href="./web-programming.html" class="nav-button">
+          <i class="fas fa-code"></i>
+          <p>Beginning Web</p>
+          <p>Program-</p>
+          <p>ming</p>
+        </a>
+        <a href="./history_of_jca.html" class="nav-button">
+          <i class="fab fa-envira"></i>
+          <p>Jim Clary & Associates</p>
+        </a>
+        <a href="./theseniorgeek.html" class="nav-button">
+          <i class="fas fa-info"></i>
+          <p>The Senior Geek</p>
+        </a>
+      </div>
+      <!-- Navbar on mobile (Hidden on tablet & desktop modes) -->
+      <div class="hide-desktop hide-tablet">
+        <a href="#" class="nav-button">Home</a>
+        <a href="./web-tools.html" class="nav-button">Web Design</a>
+        <a href="./web-programming.html" class="nav-button">Web Pgrm</a>
+        <a href="./history_of_jca.html" class="nav-button">JCA</a>
+        <a href="./theseniorgeek.html" class="nav-button">Senior Geek</a>
+      </div>
+    </nav>
+    <main>
+      <div class="header-main">
+        <h1 id="welcome"> Jim Clary</h1>
+        <p>Student, Web Designer, Technology Teacher</p>
+        <!-- <img src="./img/Jim1.jpg" alt="boy" class="w3-image" width="992" height="1108"> -->
+      </div>
+      <div class="page-main">
+        <article id="introduction">
+          <h2>Introduction</h2>
+          <p>My name is Jim Clary. I’m a retired environmental & computer consultant. I owned a small consulting company for 32 years.<br><br> This website is my semester project for a “Beginning Web Programing” course at <a href=https://www.collin.edu/>Collin College</a>. This webpage is also my personal website describing the technology side of my life story. 
+            I have been interested in technology my whole life. One of my favorite toys as a kid was an <a href= https://en.wikipedia.org/wiki/Erector_Set >Erector Set</a>.  Other early interests included radios and small gasoline engines. My dad was a Delta Airlines pilot and I developed a keen interest in aviation. (I remember flying on piston airliners and my first jet flight.) 
+                   </p><br><br>
+                   <hr><br><br>
+        </article>
+        <article id="education">
+          <h2>Education</h2>
+          <p>I graduated from high school in 1967. I began pursuing a degree in meteorology at <a href=https://www.fsu.edu>Florida State</a>. Yes – I used a slide rule in my freshman and sophomore years. My junior year I began working as an undergraduate research assistant.  That is where I “met” my first real computer - an <a href=https://en.wikipedia.org/wiki/IBM_1401>IBM 1401</a>. I remember programming in <a href=https://en.wikipedia.org/wiki/Autocoder>Autocoder</a>. I developed a love/hate relationship with punched cards and computer tape.<br><br>I received my BS degree in meteorology in the spring of 1973 and started my graduate studies at <a href=https://www.fsu.edu>Florida State</a>. I moved up in the world of computers to a <a href= https://en.wikipedia.org/wiki/CDC_6600#CDC_7600>Control Data 6600</a>. I spent the next two years earning my master’s degree in meteorology and developing weather research tools and models using <a href= https://en.wikipedia.org/wiki/Fortran>Fortran</a> and <a href= https://en.wikipedia.org/wiki/COMPASS>COMPASS assembler</a>. I received my master’s degree in 1974.
+            
+          </p><br><br>
+          <hr><br><br>
+        </article>
+        <article id="career">
+          <h2>Professional Career</h2>
+          <p>My strong experience in Fortran and Control Data computers was instrumental in getting a job at an environmental consulting firm. I spend several years developing software and computer models used in the licensing of nuclear power plants. The expansion of the <a href= https://en.wikipedia.org/wiki/Clean_Air_Act_(United_States) >Clean Air Act</a> and the formation of the <a href= https://en.wikipedia.org/wiki/United_States_Environmental_Protection_Agency >Environmental Protection Agency</a> resulted in consulting opportunities permitting <a href= https://en.wikipedia.org/wiki/Major_stationary_source >major stationary sources</a> of air pollutants. Recognizing those opportunities, my employer assigned me to permitting power plants, petroleum refineries and chemical plants. At its core, this was no different from permitting nuclear plants. I moved from developing computer models that tracked the dispersion of nuclear materials to tracking air pollutants.<br><br>
+            I retained my strong interest in computers and jumped at the opportunity to have my “own” computer. In 1978 a small consulting firm offered me a job where one of my first responsibilities was replacing time sharing on a mainframe computer to an in-house minicomputer. Our first computer was an <a href= https://en.wikipedia.org/wiki/Interdata_7/32_and_8/32 >Interdata 8/32</a>. This was a great opportunity and I significantly expanded my knowledge of operating systems and working with limited computer resources. I enjoyed the freedom of being my own “boss” and no longer having to pay large timesharing bills. <br><br>
+            The next big change in my career occurred with the introduction of the <a href= https://en.wikipedia.org/wiki/IBM_Personal_Computer>IBM Personal Computer</a> in 1981. Like my move from mainframes to minicomputers I saw a tremendous opportunity of porting the <a href= https://en.wikipedia.org/wiki/List_of_atmospheric_dispersion_models> EPA atmospheric dispersion models</a> to the PC. My employer agreed to market the ported models, but he would not fund the model development. He did approve of my development of the models on my own time.<br><br>
+            I started my own company, purchased an expensive IBM PC and began porting the mainframe air dispersion models in my “free” time. This process was challenging, as the computer resources were extremely limited. I remember to this day the excitement of purchasing a Fortran compiler developed by Microsoft that supported the <a href= https://en.wikipedia.org/wiki/Intel_8087>Intel 8087 floating-point processor</a>. That gave the PC enough power to execute most model runs in a reasonable amount of time. I also developed data-entry programs that simplified the creation and maintenance of the model input files. I developed and started teaching the first computer labs using the software. I’d rent a large hotel room and IBM PCs for each student. I arrive at the site the afternoon before the lab began and install the 8087 chips in each rented PC. (Remember – there were no portable computers at that time.)<br><br>
+            In 1984 my “second job” became larger than my day job. I resigned from my job and went to work full time for my firm <a href=http://www.jcaenv.com/>Jim Clary and Associates</a> (JCA). I worked for myself for the next 32 years before selling JCA to a large consulting firm in 2016.
+            
+          </p><br><br>
+          <hr><br><br>
+        </article>
+        <article id="retirement">
+          <h2>Retirement</h2>
+          <p>I retired in 2018. My initial retirement “plan” was to teach my fellow seniors how to use technology. I developed a YouTube channel <a href= https://www.youtube.com/channel/UCxzzIMirTSGmIMIhoJmz8dQ> The Senior Geek</a> and attempted to teach courses at the local “senior” center. The teaching part was not possible as the senior center does not have WiFi. (Don’t get me started about a beautiful senior center with no WiFi.) 
+            I switched to “plan B” – going back to <a href= http://www.collin.edu/>college</a> to learn web development. My plans are to assist nonprofits in the development and enhancement of their websites. School also keeps my mind active and allows me to enhance my programming skills.
+            
+          </p>
+        </article>
+        <div id="message">
+          <h2>Send Me a Message</h2>
+          <p>Feel free to send me a message. (Currently this is not operational. The send message button will result in a 'file not found' error.)</p><br>
         </div>
-        </div>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="message-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="message-input w3-padding-16" type="email" placeholder="Email" required name="Email"></p>
+          <p><input class="message-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+          <p><input class="message-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+          <p>
+            <button class="message-button" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
       </div>
-    </section>
-    <!-- Stats Gallery Section -->
-    <div class="gallery">
-      <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
-        <h4>TITLE</h4>
-        <p class="tag">HTML, CSS, JS, WordPress</p>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio quasi ratione ducimus? Iusto debitis
-          perferendis, veritatis temporibus ducimus voluptates quo odio nostrum, commodi deserunt reiciendis quas.
-          Soluta, illum similique!</p>
-      </div>
-      <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
-        <h4>TITLE</h4>
-        <p class="tag">HTML, CSS, JS, WordPress</p>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
-        <h4>TITLE</h4>
-        <p class="tag">HTML, CSS, JS, WordPress</p>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
-        <h4>TITLE</h4>
-        <p class="tag">HTML, CSS, JS, WordPress</p>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-    <div class="gallery">
-      <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
-        <h4>TITLE</h4>
-        <p class="tag">HTML, CSS, JS, WordPress</p>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
-        <h4>TITLE</h4>
-        <p class="tag">HTML, CSS, JS, WordPress</p>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
-        <h4>TITLE</h4>
-        <p class="tag">HTML, CSS, JS, WordPress</p>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="thumbnail"> <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
-        <h4>TITLE</h4>
-        <p class="tag">HTML, CSS, JS, WordPress</p>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-    <!-- Footer Section -->
-    <footer id="contact">
-      <p class="hero_header">GET IN TOUCH WITH ME</p>
-      <div class="button">EMAIL ME </div>
+    </main>
+    <footer class="footer">
+      <p>Proudly Handcrafted using Responsive Web Design & CSS Grid</p>
+      <p>Code Editor: <a href="https://code.visualstudio.com/"> Visual Studio Code</a></p>
+      <p><a href="http://jimclary.com">Jim Clary</a> &copy; 2019</p>
+      <p>jclary1@cougarmail.collin.edu</p>
+      <p>Updated 12/01/2019</p>
     </footer>
-    <!-- Copyrights Section -->
-    <div class="copyright">&copy;2019 - <strong>Jim Clary</strong></div>
   </div>
-  <!-- Main Container Ends -->
-</body>
 
+</body>
 </html>

@@ -1,0 +1,15 @@
+.title-go {
+  display: none;
+}
+article .figure1-lan-box {
+  width: 40%;
+  max-width: 20rem;
+}
+article .figure1-port-box {
+  width: 30%;
+  max-width: 15rem;
+}
+.collin-footer1 {}
+.collin-footer2 {
+  display: none;
+}

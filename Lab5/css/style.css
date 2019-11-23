@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+	padding: 0;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: black;
+  background: white;
+  /* Centering & define max width of the website */
+  /* +++++++++++++++ */
+  max-width: 1400px; 
+	margin: 0 auto !important; 
+  float: none !important; 
+   /* End of center & define +++++++++++++++ */
+}
+ /* Style the page container */
+.page-container{
+  display: grid;
+  /* define row height for the header */
+  grid-template-rows: 10rem;
+}
+/* Style the header container */
+.header-container{
+  grid-row: 1 /span2;
+  background-image: linear-gradient(black,lightgray);
+  font-size: 150%; 
+  font-weight: bold;
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 400px) {
+  .header-container{
+  font-size: 100%;
+  }
+}
+/* Style the main header */
+  .main-header{
+    color:#F6F6F6;
+  }
+/* Style the nav bar using flexbox*/
+nav ul {
+  grid-row:2;
+  list-style: none;
+  background: #333;
+  display:flex;
+  /* justify-content: space-around; */
+  padding: 1rem;
+  margin:0;
+ }
+ nav ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+nav ul li a:hover{
+  color: lightblue;
+}
+/* Style the main container */
+.main-container{
+  display: grid;
+  grid-row:4;
+  /* Based this method on https://evanminto.com/blog/intrinsically-responsive-css-grid-minmax-min/ */
+  grid-template-columns: repeat(auto-fill, minmax(calc(10% + 14rem), 1fr));
+  border-left: 3px solid rgb(197, 187, 187);
+  border-right: 3px solid rgb(197, 187, 187);
+}
+article{
+  padding: 2rem;
+}
+  article a:link {
+    color: black;
+    text-decoration: underline;
+  }
+  article a:visited {
+    color: black;
+  }
+  article a:hover, a:active {
+    color: red;
+  }
+  /* Style the footer */
+.footer{
+  grid-row:5;
+  line-height: .4rem;
+  background:gray;
+  color:rgb(15, 4, 4);
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+  }
+  footer a:link, footer a:visited{
+    color:rgb(15, 4, 4);
+    text-decoration: underline;
+  }
+ 

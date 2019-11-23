@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box; /*include the padding and border in an element's total width and height*/
+  margin-left: 5px;
+  margin-right: 5px;
+  max-width: 900px;
+}
+body {
+  position: relative;
+  background-image: url("../images/520px-Biohazard_symbol_(red).svg.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center;
+  background-color: lightgrey;
+}
+/*	Define conatiners*/
+#top-box {
+  position: fixed;
+  /*  size*/
+  width: 100%;
+  height: 4em; /* height can't be in % */
+  /*	location*/
+  top: -1.3em;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(65, 60, 60, 1.00);
+}
+#figure-box {
+  position: fixed;
+  /*  size*/
+  width: 0%;
+  height: 4em; /* height can't be in % */
+  /*	location*/
+  top: -.7em;
+  left: 0em;
+  z-index: 10;
+}
+#menu-box {
+  position: relative;
+  /*  size*/
+  width: 102%;
+  height: 2.7em; /* height can't be in % */
+  /*	location*/
+  top: 3.6em;
+  left: -.5em;
+  background-color: rgba(65, 60, 60, 1.00);
+  float: left;
+  /* make sure the menu items have a higher value than the undelining stuff. */
+  z-index: 5;
+}
+#main-box {
+  position: relative;
+  /*  size*/
+  width: 100%;
+  /*	location*/
+  top: 3.6em;
+  right: -.6em;
+  z-index: 0;
+}
+#article1-box {
+  position: relative;
+  float: left;
+  width: 35.0%;
+  border-right-style: dashed;
+  border-width: thin;
+  min-height: 70em;
+}
+#article2-box {
+  float: left;
+  width: 35.0%;
+  min-height: 70em;
+}
+#aside-box {
+  float: right;
+  width: 25.7%;
+  background-color: rgba(128, 128, 128, 1.00);
+  min-height: 70em;
+  padding-left: .5em;
+}
+#figure1-box {
+  float: left;
+  position: relative;
+  width: 90%;
+  height: auto;
+  top: 0em;
+  left: 0em;
+  border-radius: 25px;
+}
+#ad1-box {
+  position: relative;
+  width: 95%;
+  height: auto;
+  top: 2em;
+  left: 0em;
+}
+#footer-box {
+  position: relative;
+  /*  size*/
+  width: 102%;
+  height: 8.5em; /* height can't be in % */
+  /*	location*/
+  top: 2.5em;
+  right: 00em;
+  z-index: 20;
+  background-color: rgba(65, 60, 60, 1.00);
+}
+#W3C-box {
+  position: relative;
+/*   width: 102%;*/
+/*  height: 8.5em; */
+   top: -7em;
+  right: 17em;
+  z-index: 20;
+  background-color: rgba(65, 60, 60, 1.00);
+}
+/*	end of conatiners*/
+.main-title {
+  font-weight: bold;
+  font-size: 150%;
+  font-style: normal;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: lightgray;
+  text-align: center;
+  text-shadow: 2px 2px #FF0000;
+}
+nav {
+  color: lightgray;
+  font-size: 100%;
+}
+nav ul li {
+  list-style-type: none; /*	remove the little bullets from the menu items*/
+  float: left;
+  width: 10%; /* decrease the space between menu items */
+}
+/*define the colors for the links. I fashioned this after the dmn.com & washingtonpost.com. They do not make a color change after visiting a site.*/
+/* unvisited link */
+a:link {
+  color: lightgray;
+  text-decoration: none; /*no underline */
+}
+/* visited link */
+a:visited {
+  color: lightgray;
+}
+/* mouse over link */
+a:hover {
+  color: lightblue;
+}
+/* selected link */
+a:active {
+  color: lightcoral;
+}
+.main-body {
+  font-family: "Source Sans Pro";
+  color: black;
+}
+/*Start - Clear-Fix Hack*/
+#main-box::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/*End - Clear-Fix Hack*/
+.figure1 {}
+.ad1 {}
+footer {
+  color: lightgray;
+  text-align: center;
+}
+.footer_links {
+  text-decoration: underline;
+}
+.reduced-spacing {
+  line-height: 30%;
+}
