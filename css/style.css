@@ -105,6 +105,9 @@ article p{
     text-align: center;
     font-size: 200%;
     }
+    .flex-img p{
+      text-align: center;
+    }
   .responsive-img{
     width: 90%;
       height: auto;
