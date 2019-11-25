@@ -39,17 +39,17 @@ body {
   grid-gap: 0;
   background-color: #000;
 }
+.header-main, .page-main {
+  max-width: 60rem;
+}
 .header-main {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin: 1.25rem;
 }
 .page-main {
-  max-width: 60rem;
   text-align: left;
   color: #b9b6b6;
-  /* padding: 2rem .5rem; */
 }
 .page-main h2 {
   color: #f1f1f1;
