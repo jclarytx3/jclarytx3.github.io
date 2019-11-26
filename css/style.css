@@ -107,8 +107,7 @@ footer a:link, footer a:visited {
   .flex-img p {
   text-align: center;
 }
-/* use .center-img when figure taller than wide */
-.center-img {
+.portrait-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
