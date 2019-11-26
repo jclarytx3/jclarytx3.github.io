@@ -41,7 +41,7 @@ body {
 }
 .header-main, .page-main {
   max-width: 60rem;
-}
+  }
 .header-main {
   text-align: center;
   padding-top: 1rem;
@@ -104,12 +104,12 @@ footer a:link, footer a:visited {
   text-align: center;
   font-size: 200%;
 }
-.flex-img p {
+.flex-img p, .center-img p {
   text-align: center;
 }
 .responsive-img {
-  width: 90%;
   height: auto;
+  width: 95%;
 }
 /* HTML5 uses CSS for <hr>  */
 hr {
@@ -147,14 +147,13 @@ article h2, #message h2 {
   height: 100%;
 }
 /* Responsive Web Pages */
-/* Used 750px as the breakpoint for mobile to maximize the horizontal space for the youtube frames. */
 @media (max-width: 600px) {
   /* for mobile, can use normal flow. Simple layout - one column. */
   .hide-mobile {
     display: none;
   }
-  .page-main {
-    margin-left: .5rem;
+  main{
+    padding: .75rem 1rem;
   }
   .nav {
     width: 100%;
@@ -188,13 +187,10 @@ article h2, #message h2 {
   .grid-container {
     grid-template-columns: 7.5rem auto;
   }
-  .page {
+  main {
     grid-column: 2 /span 1;
     grid-row: 1 / span 1;
     padding: .75rem 1.5rem;
-  }
-  .page-main {
-    margin-left: 2rem;
   }
   .footer {
     grid-column: 1 / span 2;
