@@ -104,11 +104,22 @@ footer a:link, footer a:visited {
   text-align: center;
   font-size: 200%;
 }
-.flex-img p, .center-img p {
+  .flex-img p {
   text-align: center;
+}
+/* use .center-img when figure taller than wide */
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .responsive-img {
   height: auto;
+  width: 100%;
+}
+/* set space between side-by-side pictures */
+.flex-img .responsive-img {
   width: 95%;
 }
 /* HTML5 uses CSS for <hr>  */
