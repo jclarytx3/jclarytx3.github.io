@@ -104,6 +104,12 @@ footer a:link, footer a:visited {
   text-align: center;
   font-size: 200%;
 }
+/*Start - Clear-Fix Hack*/
+  /* .flex-img::after {
+    content: "";
+    clear: both;
+    display: block;
+  } */
 .flex-img p, .center-img p {
   text-align: center;
 }
